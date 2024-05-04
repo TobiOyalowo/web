@@ -1,0 +1,113 @@
+/* Common styles */
+body {
+    background-color: #F8C794;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    width: 100%;
+    height: auto; /* Change height to auto */
+    background-color: #D8AE7E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px white;
+    box-shadow: 10px 10px #a7855f;
+    padding: 20px; /* Add padding for spacing */
+}
+
+.one {
+    font-family: "Encode Sans SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: center; /* Center align text */
+}
+
+.one h1 {
+    color: white;
+    font-size: 24px; /* Adjust font size */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.two {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center; /* Center align text */
+}
+
+.two h2 {
+    font-size: 14px;
+    color: white;
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.image-container,
+.image2-container,
+.image3-container {
+    margin-top: 20px;
+    width: 100%; /* Set width to 100% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img,
+.image2-container img,
+.image3-container img {
+    max-width: 100%; /* Set max-width to 100% */
+    height: auto;
+    border: solid 3px white;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        border-color: red;
+    }
+    to {
+        border-color: violet;
+    }
+}
+
+/* Media query for tablet and larger devices */
+@media only screen and (min-width: 768px) {
+    .bar {
+        width: 70%;
+    }
+
+    .one h1 {
+        font-size: 30px;
+    }
+
+    .two h2 {
+        font-size: 18px;
+    }
+
+    .image-container img,
+    .image2-container img,
+    .image3-container img {
+        max-width: 300px;
+    }
+}
+
+/* Media query for desktop */
+@media only screen and (min-width: 1024px) {
+    .bar {
+        width: 60%;
+    }
+
+    .one h1 {
+        font-size: 40px;
+    }
+
+    .two h2 {
+        font-size: 20px;
+    }
+}
